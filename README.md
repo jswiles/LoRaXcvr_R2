@@ -1,4 +1,6 @@
-# LoRa Transceiver Revision 2
+# LoRa Transceiver
+
+LoRa Transceiver PCB for LoRa Remote Monitor System
 
 - STM32L15x MPU : 
     - 256K FlashMemory
