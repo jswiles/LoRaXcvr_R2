@@ -21,7 +21,7 @@ LoRa Transceiver PCB for LoRa Remote Monitor System
 
 Revision 1 
 
-![LoRaXcvr_R2](/Photos/LoRaXcvr_R2.png "Revision 2")
+![LoRaXcvr_R2](/Photos/LoRaXcvr_R2.JPG "Revision 2")
 
 Revision 2 3D Model 
 

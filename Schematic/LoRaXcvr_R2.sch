@@ -197,17 +197,6 @@ F 4 "541-CRCW0805100KJNEBCT-ND" H 2850 1400 50  0001 C CNN "DigiKey"
 	1    2850 1400
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:GND #PWR04
-U 1 1 6097899E
-P 1250 2100
-F 0 "#PWR04" H 1250 1850 50  0001 C CNN
-F 1 "GND" H 1255 1927 50  0000 C CNN
-F 2 "" H 1250 2100 50  0001 C CNN
-F 3 "" H 1250 2100 50  0001 C CNN
-	1    1250 2100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2250 1500 2350 1500
 Wire Wire Line
@@ -739,18 +728,6 @@ Wire Wire Line
 Connection ~ 7650 8450
 Wire Wire Line
 	7650 8450 7950 8450
-$Comp
-L Connector:Screw_Terminal_01x04 J1
-U 1 1 6097C1F2
-P 1200 7150
-F 0 "J1" H 1118 7467 50  0000 C CNN
-F 1 "Screw_Terminal_01x04" H 1118 7376 50  0000 C CNN
-F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-4_1x04_P2.54mm_Horizontal" H 1200 7150 50  0001 C CNN
-F 3 "~" H 1200 7150 50  0001 C CNN
-F 4 "ED10563-ND" H 1200 7150 50  0001 C CNN "DigiKey"
-	1    1200 7150
-	-1   0    0    -1  
-$EndComp
 Text Notes 600  8050 0    50   ~ 0
 Battery & Solar Panel Terminal
 $Comp
@@ -900,10 +877,6 @@ F 3 "" H 1450 7750 50  0001 C CNN
 	1    1450 7750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1400 7350 1450 7350
-Wire Wire Line
-	1450 7350 1450 7750
 Text Notes 600  7050 0    50   ~ 0
 6V (10V Max)
 Text Notes 600  7150 0    50   ~ 0
@@ -1677,59 +1650,6 @@ Wire Wire Line
 Text Notes 3300 2450 0    50   ~ 0
 DNI
 $Comp
-L Device:R_US R10
-U 1 1 61052300
-P 1250 1850
-F 0 "R10" H 1318 1896 50  0000 L CNN
-F 1 "0" H 1318 1805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1290 1840 50  0001 C CNN
-F 3 "~" H 1250 1850 50  0001 C CNN
-F 4 "" H 1250 1850 50  0001 C CNN "DigiKey"
-	1    1250 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R11
-U 1 1 61052EA5
-P 2550 1850
-F 0 "R11" H 2618 1896 50  0000 L CNN
-F 1 "0" H 2618 1805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 2590 1840 50  0001 C CNN
-F 3 "~" H 2550 1850 50  0001 C CNN
-F 4 "" H 2550 1850 50  0001 C CNN "DigiKey"
-	1    2550 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR044
-U 1 1 6108C7FF
-P 2550 2150
-F 0 "#PWR044" H 2550 1900 50  0001 C CNN
-F 1 "GND" H 2555 1977 50  0000 C CNN
-F 2 "" H 2550 2150 50  0001 C CNN
-F 3 "" H 2550 2150 50  0001 C CNN
-	1    2550 2150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1250 1700 1250 1400
-Wire Wire Line
-	1200 1400 1250 1400
-Connection ~ 1250 1400
-Wire Wire Line
-	1250 1400 1750 1400
-Wire Wire Line
-	1250 2100 1250 2000
-Wire Wire Line
-	2550 2150 2550 2000
-Wire Wire Line
-	2550 1700 2550 1400
-Wire Wire Line
-	2550 1400 2700 1400
-Wire Wire Line
-	2250 1400 2550 1400
-Connection ~ 2550 1400
-$Comp
 L power:GND #PWR043
 U 1 1 610F8B20
 P 1600 1750
@@ -1925,20 +1845,6 @@ F 3 "" H 2200 8150 50  0001 C CNN
 $EndComp
 Text Notes 1750 6750 0    50   ~ 0
 Reverse polarity protection
-Wire Wire Line
-	1450 7350 1450 7250
-Wire Wire Line
-	1450 7250 1400 7250
-Connection ~ 1450 7350
-Wire Wire Line
-	1400 7050 1600 7050
-Wire Wire Line
-	1400 7150 1600 7150
-Wire Wire Line
-	1600 7150 1600 7050
-Wire Wire Line
-	2000 7050 1600 7050
-Connection ~ 1600 7050
 $Comp
 L Device:R_US R12
 U 1 1 61344245
@@ -2072,4 +1978,25 @@ Wire Wire Line
 	14950 2250 14950 1950
 Wire Wire Line
 	12850 2250 14950 2250
+Wire Wire Line
+	1200 1400 1750 1400
+Wire Wire Line
+	2250 1400 2700 1400
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 62EBADCD
+P 1200 7050
+F 0 "J1" H 1118 7267 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1118 7176 50  0000 C CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal" H 1200 7050 50  0001 C CNN
+F 3 "~" H 1200 7050 50  0001 C CNN
+	1    1200 7050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 7050 2000 7050
+Wire Wire Line
+	1400 7150 1450 7150
+Wire Wire Line
+	1450 7150 1450 7750
 $EndSCHEMATC
